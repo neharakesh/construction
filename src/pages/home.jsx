@@ -1,8 +1,13 @@
 import React from 'react'
-
+import Navbar from '../components/navbar.jsx'
 function Home() {
     return (
-        <div>home</div>
+        <>
+        <div className=''>
+        <Navbar/>
+        </div>
+        
+        </>
     )
 }
 
