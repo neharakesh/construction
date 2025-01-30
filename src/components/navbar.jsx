@@ -22,7 +22,7 @@ const Navbar = () => {
             src={Logo}
             alt="Company Logo"
           />
-          <span className="ml-2 text-yellow-600 text-xl font-bold">Construction</span>
+          <span className=" text-yellow-600 text-xl font-bold">Constructions</span>
         </div>
 
         {/* Hamburger Menu */}
