@@ -5,6 +5,7 @@ import HeatMap from '../components/heatmap.jsx'
 import { Link } from 'react-router-dom'
 import build from '../../public/images/build.jpeg'
 import build2 from '../../public/images/build2.jpeg'
+import mapfull from '../../public/images/mapfull.jpeg'
 import amitpic from '../../public/images/amitpic.jpeg'
 import saftey from '../../public/images/saftey.jpg'
 import { Star } from "lucide-react";
@@ -38,17 +39,17 @@ function Home() {
         {/**who we are section */}
         <div>
             <h1 className='font-semibold font-serif text-2xl md:ml-36 mt-20 mb-8 text-gray-600 ml-4'>____Who we are?...</h1>
-            <h2 className='text-4xl font-bold font-serif md:ml-36 mr-4 ml-4 '>When we focus on mutual success,</h2>
-            <h2 className='text-4xl font-bold font-serif md:ml-36 mr-4 ml-4 '> everyone wins.</h2>
+            <h2 className='text-4xl font-bold font-serif md:ml-36 mr-4 ml-4 '>Collaboration in construction leads</h2>
+            <h2 className='text-4xl font-bold font-serif md:ml-36 mr-4 ml-4 '> to success for all.</h2>
 
 
             <div className='md:ml-36 md:mr-40 font-serif ml-4 mr-4'>
-                <p className='mt-20'>The drive to go above and beyond your construction needs; the collaborative culture that works with you to exceed your project goals; and the capability to leverage innovation to meet emerging trends and keep you at the forefront. This is PCL.</p>
+                <p className='mt-20'>At AR CONSTRUCTION, we go beyond building—we collaborate to exceed your project goals. With innovation at our core, we adapt to emerging trends, keeping you ahead in construction excellence.</p>
                 <h1 className='text-l font-semibold mt-6 mb-6'>Powered by our culture of ownership</h1>
 
-                <p className='mb-10'>As a company that is 100 percent employee-owned, we collaborate and innovate to help our partners thrive. Our culture of ownership drives your success.</p>
+                <p className='mb-10'>we build with passion and innovation, working closely with our partners to ensure success. Our commitment to excellence drives every project forward.</p>
 
-                <p className='mb-10'>Whether you are in the Buildings, Civil, Industrial or Special Projects market, partnering with PCL means you're gaining a proven, reliable and trusted full-service partner with a mobile network of more than 4,900 experts and  professionals across the United States, Canada, Australia and the Caribbean. </p>
+                <p className='mb-10'>Whether you're in Buildings, Civil, Industrial, or Special Projects, partnering with AR CONSTRUCTION means gaining a trusted and reliable team dedicated to delivering excellence in every project.</p>
 
                 <p className='mb-20'>From advanced digital construction technologies to the cutting edge of sustainable construction, we find new ways to deliver for a more diverse mix of clients. We bring together the right teams to find the best way forward and elevate your vision of success.</p>
             </div>
@@ -63,25 +64,26 @@ function Home() {
   {/** Left Section */}
   <div className="flex flex-col md:flex-row justify-between mt-10">
     <div className="text-white w-full md:w-1/2 px-4 md:px-0">
-      <h1 className="text-3xl font-bold mt-10 md:ml-28">Helping you transform</h1>
-      <h1 className="text-3xl font-bold mt-2 md:ml-28">communities across the globe.</h1>
+      <h1 className="text-3xl font-bold mt-10 md:ml-28">
+      Building a better future, </h1>
+      <h1 className="text-3xl font-bold mt-2 md:ml-28">one community at a time.</h1>
       
       <div className="flex md:flex-row md:justify-center flex-col text-xl text-white space-x-6 mt-8 cursor-pointer mb-10 flex-wrap justify-center text-center space-y-2 ">
-        <h2 className="hover:underline text-amber-300 hover:text-yellow-600">Himachal Pradesh</h2>
+        
         <h2 className="hover:underline text-amber-300 hover:text-yellow-600">Uttar Pradesh</h2>
-        <h2 className="hover:underline text-amber-300 hover:text-yellow-600">Rajasthan</h2>
+        
         <h2 className="hover:underline text-amber-300 hover:text-yellow-600">Madhya Pradesh</h2>
       </div>
 
-      <div className="rounded-lg mt-10 mr-4">
-        <HeatMap />
+      <div className="rounded-lg mt-10 mr-4 w-full md:items-center justify-center flex">
+        <img src={mapfull} alt="" />
       </div>
     </div>
 
     {/** Right Section */}
     <div className="w-full md:w-1/2 mt-10 md:mt-0 text-white px-4 md:px-0">
       <p className="mt-10">
-        PCL ranks among the largest general contractors in the United States. No matter where or what you want to build, we mobilize the right experts and resources to drive value, deliver excellence, and exceed your expectations.
+      AR CONSTRUCTION is your trusted partner for building excellence. No matter the project, we bring the right expertise and resources to deliver quality, innovation, and exceed expectations.
       </p>
 
       <div className="mt-32 text-center md:text-center">
@@ -125,10 +127,10 @@ function Home() {
     {/** Right Section */}
     <div className='justify-center w-full md:w-1/2 mt-8 md:mt-32'>
       <h1 className='text-4xl md:text-5xl font-bold mt-8  text-center text-yellow-600 '>
-        Stunning structures, sustainably built
+      We build your Dream Home
       </h1>
       <p className='mt-6 md:mr-12 text-center md:text-center'>
-        PCL’s network of construction professionals rise to the challenges associated with a diverse buildings portfolio, bringing added value to every educational, institutional, residential, and commercial construction project. PCL offers substantial construction experience, competitive pricing, financial strength, integrity, and a commitment to your project that is supported by a foundation of quality and workplace safety.
+      AR Construction's team of skilled professionals is dedicated to delivering excellence across a diverse range of projects, including educational, institutional, residential, and commercial developments. We bring expertise, competitive pricing, financial stability, and a strong commitment to quality, integrity, and workplace safety, ensuring the success of every project we undertake.
       </p>
     </div>
   </div>
@@ -155,7 +157,8 @@ function Home() {
         Stunning structures, sustainably built
       </h1>
       <p className='mt-6 text-center md:text-center'>
-        PCL’s network of construction professionals rise to the challenges associated with a diverse buildings portfolio, bringing added value to every educational, institutional, residential, and commercial construction project. PCL offers substantial construction experience, competitive pricing, financial strength, integrity, and a commitment to your project that is supported by a foundation of quality and workplace safety.
+        
+AR Construction's experienced professionals embrace the challenges of diverse building projects, adding value to educational, institutional, residential, and commercial developments. We offer expertise, competitive pricing, financial reliability, and an unwavering commitment to quality, integrity, and workplace safety to ensure your project's success.
       </p>
     </div>
     {/** Right Section */}
@@ -177,7 +180,8 @@ function Home() {
           Your Vision, Our Mission..
         </span>
         <p className='md:ml-36 md:mr-40 ml-4 mr-4 mt-4 md:mt-0 text-lg md:text-base text-center md:text-left w-full md:w-1/2'>
-          As owners, we are more accountable to you and more invested in your success. Across all levels of our organization, our experienced, innovative solution providers put our culture of ownership to work for you. When you succeed, we succeed.
+          
+At AR Construction, we take ownership of every project, ensuring accountability and a deep commitment to your success. Our experienced and innovative team is dedicated to delivering solutions that drive excellence. Your success is our success.
         </p>
       </div>
 
@@ -192,7 +196,9 @@ function Home() {
               Founder & General Manager
             </h2>
             <p className='text-gray-600 mt-4 text-base md:text-lg leading-relaxed text-center md:text-left'>
-              PCL is only successful because of the amazing and talented people we hire and professionally develop. Joe believes it is his responsibility to ensure the company is bringing in the top talent that will do a great job and mesh well with our culture. He's particularly focused on ensuring we continuously hire college interns on a regular basis.
+             
+AR Construction thrives under the leadership of its founder, Amit Rajpoot, whose vision and dedication drive the company's success. With a hands-on approach, Amit Rajpootoversees every aspect of the business, from strategic planning to project execution, ensuring that AR Construction consistently delivers excellence. Committed to building a strong and talented team, he prioritizes hiring top professionals and nurturing future industry leaders through continuous learning and development. Under his guidance, AR Construction upholds the highest standards of quality, integrity, and innovation in every project.
+
             </p>
           </div>
 

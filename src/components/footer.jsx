@@ -9,7 +9,8 @@ const Footer = () => {
           {/* Branding */}
           <div className="mb-6 md:mb-0 text-center md:text-left">
             <h3 className="text-2xl font-bold">AR <span className="text-yellow-600">Constructions</span> </h3>
-            <p className="mt-2 text-white">We build solutions that matter.</p>
+            <p className="mt-2 text-white">We build your <span className="
+            text-yellow-600">Dream Home</span>.</p>
           </div>
 
           {/* Navigation Links */}

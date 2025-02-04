@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import cr1 from '../../public/images/cr1.png'
-import cr2 from '../../public/images/cr2.png'
-import cr3 from '../../public/images/cr3.png'
-import cr4 from '../../public/images/cr4.png'
+import cr1 from '../../public/images/cr11.jpeg'
+import cr2 from '../../public/images/cr3.png'
+import cr3 from '../../public/images/cr22.jpeg'
+import cr4 from '../../public/images/cr2.png'
 
 const Carousel = () => {
   const slides = [cr1,cr2,cr3,cr4

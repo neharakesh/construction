@@ -33,14 +33,8 @@ const HeatMapLayer = ({ cityData }) => {
 const HeatMap = () => {
   // City data: [latitude, longitude, intensity]
   const cityData = [
-    [28.7041, 77.1025, 0.8], // Delhi
-    [19.076, 72.8777, 0.6],  // Mumbai
-    [22.5726, 88.3639, 0.7], // Kolkata
-    [13.0827, 80.2707, 0.5], // Chennai
-    [12.9716, 77.5946, 0.9], // Bengaluru
-    [26.9124, 75.7873, 0.4], // Jaipur
-    [21.1702, 72.8311, 0.3], // Surat
-    [23.0225, 72.5714, 0.6], // Ahmedabad
+    [25.4484, 78.5685, 0.6], // Jhansi
+    [25.2019, 80.8322, 0.7], // Chitrakoot
   ];
 
   return (
