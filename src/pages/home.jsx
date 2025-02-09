@@ -14,13 +14,13 @@ function Home() {
      // Icon library for clean star icons
      const reviews = [
         {
-          name: "Rahul Sharma",
+          name: "Ashish Sahu",
           review:
             "Great experience! The service was exceptional, and I highly recommend it.",
           rating: 5,
         },
         {
-          name: "Priya Verma",
+          name: "Prince Sahu",
           review: "Good quality and friendly staff. Will definitely come back!",
           rating: 4,
         },

@@ -15,9 +15,9 @@ const services = [
     { icon: <Truck className="text-green-500 w-12 h-12" />, title: "Material Supply", desc: "Reliable supply of high-quality construction materials for your projects." },
     { icon: <Wrench className="text-red-500 w-12 h-12" />, title: "Renovation & Remodeling", desc: "Transforming old spaces into modern, functional environments." },
     { icon: <Ruler className="text-purple-500 w-12 h-12" />, title: "Site Planning", desc: "Expert site planning to optimize space, safety, and efficiency." },
-    { icon: <PaintRoller className="text-orange-500 w-12 h-12" />, title: "Interior & Exterior Painting", desc: "Enhancing aesthetics with high-quality painting services." },
-    { icon: <Hammer className="text-indigo-500 w-12 h-12" />, title: "Steel & Concrete Work", desc: "Durable steel and concrete solutions for strong foundations." },
-    { icon: <Layers className="text-pink-500 w-12 h-12" />, title: "Waterproofing & Insulation", desc: "High-performance waterproofing & insulation services." }
+    { icon: <PaintRoller className="text-orange-500 w-12 h-12" />, title: "2D Planning & 3D Elivation", desc: "Bringing your vision to life with precise 2D planning and stunning 3D elevation designs." },
+    { icon: <Hammer className="text-indigo-500 w-12 h-12" />, title: "Vastu Consultant", desc: "Expert Vastu consultation for harmonious and well-balanced building and home designs." },
+    { icon: <Layers className="text-pink-500 w-12 h-12" />, title: "Blueprint & Estimation", desc: "Precise blueprints and cost estimations for efficient, budget-friendly construction." }
   ];
     return (
         <>
@@ -78,8 +78,8 @@ const services = [
       {/* Right Side - Image */}
       <div className="md:w-1/2 w-full flex justify-center">
       <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-          Our suite of integrated construction services ensures the highest degree of quality, 
-          safety, efficiency, and innovation on your projects.
+      Delivering Comprehensive Construction Solutions for Lasting Excellence  
+      Our range of construction services is designed to uphold the highest standards of quality, safety, efficiency, and innovation, ensuring exceptional results for every project.
         </p>
       </div>
 
@@ -131,7 +131,7 @@ const services = [
 
             
         </div>
-        <div className='mt-96'>
+        <div className=''>
             <Footer/>
         </div>
         </>

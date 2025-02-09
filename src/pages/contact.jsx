@@ -3,6 +3,7 @@ import About1 from '../../public/images/about1.jpg'
 import { Mail, Phone, MapPin,ChevronDown } from "lucide-react";
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
+import Map from '../components/heatmap.jsx'
 
 function Contact() {
   const [openFAQ, setOpenFAQ] = useState(null);
@@ -110,6 +111,10 @@ function Contact() {
         </div>
       </div>
     
+
+    <div className='m-32'>
+      <Map/>
+    </div>
 
 
 
