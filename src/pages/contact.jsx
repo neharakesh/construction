@@ -112,13 +112,11 @@ function Contact() {
       </div>
     
 
-    <div className='m-32'>
-      <Map/>
-    </div>
+    
 
 
 
-        <div className='mt-96'>
+        <div className='mt-32'>
             <Footer/>
         </div>
         </>

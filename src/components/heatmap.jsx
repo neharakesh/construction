@@ -1,63 +1,51 @@
 import React, { useEffect } from "react";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
-import L from "leaflet"; // Import Leaflet directly for heatmap
+import L from "leaflet"; // Import Leaflet for heatmap
 import "leaflet/dist/leaflet.css";
-import "leaflet.heat"; // Import leaflet.heat
+import "leaflet.heat"; // Import leaflet.heat for heatmaps
 
-const HeatMapLayer = ({ cityData }) => {
+const HeatMapLayer = ({ locations }) => {
   const map = useMap();
 
   useEffect(() => {
-    const heatData = cityData.map((city) => [
-      city[0], // Latitude
-      city[1], // Longitude
-      city[2], // Intensity
-    ]);
+    const heatData = locations.map((loc) => [loc.lat, loc.lng, loc.intensity]);
 
     const heatLayer = L.heatLayer(heatData, { 
-      radius: 15, 
-      blur: 10, 
-      maxZoom: 2,
-      gradient: { 0.5: "yellow"}, // Custom gradient for better contrast
+      radius: 40, 
+      blur: 25, 
+      maxZoom: 12,
+      gradient: { 0.2: "blue", 0.5: "yellow", 1.0: "red" }, // Color gradient
     });
+
     heatLayer.addTo(map);
 
     return () => {
-      map.removeLayer(heatLayer); // Cleanup the heatmap layer on component unmount
+      map.removeLayer(heatLayer);
     };
-  }, [cityData, map]);
+  }, [locations, map]);
 
   return null;
 };
 
 const HeatMap = () => {
-  // City data: [latitude, longitude, intensity]
-  const cityData = [
-    [25.4484, 78.5685, 0.6], // Jhansi
-    [25.2019, 80.8322, 0.7], // Chitrakoot
+  const locations = [
+    { lat: 25.2361, lng: 79.1874, intensity: 0.8 }, // Mauranipur (AR Construction)
   ];
 
   return (
-    <div className="flex flex-col" style={{ height: "100vh", backgroundColor: "#f4f5f7" }}>
-      
-      <div className="flex-1 rounded-sm">
-        <MapContainer
-          center={[20.5937, 78.9629]} // Center on India
-          zoom={5} // Fixed zoom level for India
-          style={{ height: "100%", width: "100%" }}
-          scrollWheelZoom={false} // Disable zooming with mouse scroll
-          zoomControl={false} // Disable zoom controls
-        >
-          {/* Tile Layer for Grey Map */}
-          <TileLayer
-            url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png" // Grey map style
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          />
-          
-          {/* HeatMap Layer */}
-          <HeatMapLayer cityData={cityData} />
-        </MapContainer>
-      </div>
+    <div className="flex flex-col h-screen bg-gray-100">
+      <MapContainer
+        center={[22, 80]} // Center on India
+        zoom={5}
+        style={{ height: "100%", width: "100%" }}
+        scrollWheelZoom={true}
+      >
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; OpenStreetMap contributors'
+        />
+        <HeatMapLayer locations={locations} />
+      </MapContainer>
     </div>
   );
 };
