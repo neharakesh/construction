@@ -13,7 +13,7 @@ const HeatMapLayer = ({ locations }) => {
     const heatLayer = L.heatLayer(heatData, { 
       radius: 40, 
       blur: 25, 
-      maxZoom: 12,
+      maxZoom: 12434,
       gradient: { 0.2: "blue", 0.5: "yellow", 1.0: "red" }, // Color gradient
     });
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../components/navbar.jsx'
 import Carousel from '../components/carousel.jsx'
 import HeatMap from '../components/heatmap.jsx'
@@ -10,8 +10,14 @@ import amitpic from '../../public/images/amitpic.jpeg'
 import saftey from '../../public/images/saftey.jpg'
 import { Star } from "lucide-react";
 import Footer from '../components/footer.jsx'
+import AOS from "aos"
+import "aos/dist/aos.css"
+
 function Home() {
      // Icon library for clean star icons
+     useEffect(()=>{
+      AOS.init({duration:1000})
+     },[])
      const reviews = [
         {
           name: "Ashish Sahu",
@@ -39,8 +45,8 @@ function Home() {
         {/**who we are section */}
         <div>
             <h1 className='font-semibold font-serif text-2xl md:ml-36 mt-20 mb-8 text-gray-600 ml-4'>____Who we are?...</h1>
-            <h2 className='text-4xl font-bold font-serif md:ml-36 mr-4 ml-4 '>Collaboration in construction leads</h2>
-            <h2 className='text-4xl font-bold font-serif md:ml-36 mr-4 ml-4 '> to success for all.</h2>
+            <h2 className='text-4xl font-bold font-serif md:ml-36 mr-4 ml-4 ' data-aos="zoom-in-up">Collaboration in construction leads</h2>
+            <h2 className='text-4xl font-bold font-serif md:ml-36 mr-4 ml-4 ' data-aos="zoom-in-up"> to success for all.</h2>
 
 
             <div className='md:ml-36 md:mr-40 font-serif ml-4 mr-4'>
