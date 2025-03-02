@@ -14,10 +14,12 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 
 function Home() {
-     // Icon library for clean star icons
+    
      useEffect(()=>{
       AOS.init({duration:1000})
      },[])
+
+
      const reviews = [
         {
           name: "Ashish Sahu",
@@ -65,52 +67,52 @@ function Home() {
         </div>
         {/** Heatmap Section */}
 <div className="bg-[#36383d] md:p-32 p-8 mb-0 font-serif w-full">
-  <h1 className="font-bold text-white text-center md:text-left">_____WHERE WE WORK</h1>
+  <h1 className="font-bold text-white text-center md:text-left" data-aos="zoom-in-up">_____WHERE WE WORK</h1>
   
   {/** Left Section */}
   <div className="flex flex-col md:flex-row justify-between mt-10">
     <div className="text-white w-full md:w-1/2 px-4 md:px-0">
-      <h1 className="text-3xl font-bold mt-10 md:ml-28">
+      <h1 className="text-3xl font-bold mt-10 md:ml-28" data-aos="zoom-in-up">
       Building a better future, </h1>
-      <h1 className="text-3xl font-bold mt-2 md:ml-28">one community at a time.</h1>
+      <h1 className="text-3xl font-bold mt-2 md:ml-28" data-aos="zoom-in-up">one community at a time.</h1>
       
-      <div className="flex md:flex-row md:justify-center flex-col text-xl text-white space-x-6 mt-8 cursor-pointer mb-10 flex-wrap justify-center text-center space-y-2 ">
+      <div className="flex md:flex-row md:justify-center flex-col text-xl text-white space-x-6 mt-8 cursor-pointer mb-10 flex-wrap justify-center text-center space-y-2 " data-aos="zoom-in-up">
         
-        <h2 className="hover:underline text-amber-300 hover:text-yellow-600">Uttar Pradesh</h2>
+        <h2 className="hover:underline text-amber-300 hover:text-yellow-600" data-aos="zoom-in-up">Uttar Pradesh</h2>
         
         <h2 className="hover:underline text-amber-300 hover:text-yellow-600">Madhya Pradesh</h2>
       </div>
 
-      <div className="rounded-lg mt-10 mr-4 w-full md:items-center justify-center flex">
+      <div className="rounded-lg mt-10 mr-4 w-full md:items-center justify-center flex" data-aos="zoom-in-up">
         <img src={mapfull} alt="" />
       </div>
     </div>
 
     {/** Right Section */}
-    <div className="w-full md:w-1/2 mt-10 md:mt-0 text-white px-4 md:px-0">
+    <div className="w-full md:w-1/2 mt-10 md:mt-0 text-white px-4 md:px-0" data-aos="zoom-in-up">
       <p className="mt-10">
       AR CONSTRUCTION is your trusted partner for building excellence. No matter the project, we bring the right expertise and resources to deliver quality, innovation, and exceed expectations.
       </p>
 
       <div className="mt-32 text-center md:text-center">
-        <h1 className="text-8xl text-yellow-600 font-extrabold">20+</h1>
-        <h2 className="text-white font-extrabold text-2xl">Projects Completed</h2>
+        <h1 className="text-8xl text-yellow-600 font-extrabold" data-aos="zoom-in-up">20+</h1>
+        <h2 className="text-white font-extrabold text-2xl" data-aos="zoom-in-up">Projects Completed</h2>
       </div>
 
       <div className="mt-32 text-center md:text-center">
-        <h1 className="text-8xl text-yellow-600 font-extrabold">4+</h1>
-        <h2 className="text-white font-extrabold text-2xl">Active Projects</h2>
+        <h1 className="text-8xl text-yellow-600 font-extrabold" data-aos="zoom-in-up">4+</h1>
+        <h2 className="text-white font-extrabold text-2xl" data-aos="zoom-in-up">Active Projects</h2>
       </div>
 
       <div className="flex justify-center mt-6">
         <Link to="/office">
-          <button className="px-14 py-3 mt-32 bg-white text-green-700 font-semibold rounded-lg shadow-md hover:bg-gray-300 transition duration-300">
+          <button className="px-14 py-3 mt-32 bg-white text-green-700 font-semibold rounded-lg shadow-md hover:bg-gray-300 transition duration-300" data-aos="zoom-in-up">
             View Our Office
           </button>
         </Link>
       </div>
 
-      <p className="text-white text-sm mt-4 text-center">See the offices behind our projects</p>
+      <p className="text-white text-sm mt-4 text-center" data-aos="zoom-in-up">See the offices behind our projects</p>
     </div>
   </div>
 </div>
@@ -118,17 +120,17 @@ function Home() {
 
         {/** What we do section */}
         <div className=''>
-  <h1 className='font-semibold font-serif text-2xl md:ml-36 mt-20 mb-8 text-gray-600 ml-4'>
+  <h1 className='font-semibold font-serif text-2xl md:ml-36 mt-20 mb-8 text-gray-600 ml-4' data-aos="zoom-in-up">
     _____What we do...
   </h1>
-  <span className='text-4xl font-bold font-serif md:ml-36 mr-4 ml-4 text-center'>
+  <span className='text-4xl font-bold font-serif md:ml-36 mr-4 ml-4 text-center' data-aos="zoom-in-up">
     We have a vision for the future of construction.
   </span>
 
   <div className='flex flex-col md:flex-row'>
     {/** Left Section */}
-    <div className='md:ml-36 ml-4 mr-4 w-full md:w-1/2'>
-      <img className='w-full mt-16' src={build} alt="error Loading" />
+    <div className='md:ml-36 ml-4 mr-4 w-full md:w-1/2' data-aos="slide-right" data-aos-duration="1000">
+      <img className='w-full mt-16' data-aos="zoom-in-up" src={build} alt="error Loading" />
     </div>
     {/** Right Section */}
     <div className='justify-center w-full md:w-1/2 mt-8 md:mt-32'>
@@ -159,17 +161,17 @@ function Home() {
   <div className='flex flex-col md:flex-row'>
     {/** Left Section */}
     <div className='justify-center w-full md:w-1/2 mt-8 md:mt-32 ml-4'>
-      <h1 className='text-4xl md:text-5xl font-bold text-center md:text-center text-yellow-600'>
+      <h1 className='text-4xl md:text-5xl font-bold text-center md:text-center text-yellow-600' data-aos="zoom-in-up">
         Stunning structures, sustainably built
       </h1>
-      <p className='mt-6 text-center md:text-center'>
+      <p className='mt-6 text-center md:text-center' data-aos="zoom-in-up">
         
 AR Construction's experienced professionals embrace the challenges of diverse building projects, adding value to educational, institutional, residential, and commercial developments. We offer expertise, competitive pricing, financial reliability, and an unwavering commitment to quality, integrity, and workplace safety to ensure your project's success.
       </p>
     </div>
     {/** Right Section */}
     <div className='md:ml-36 ml-4 mr-4 w-full md:w-1/2 mt-16 md:mt-4'>
-      <img className='w-full mt-16 md:h-auto md:mb-4' src={build2} alt="error Loading" />
+      <img className='w-full mt-16 md:h-auto md:mb-4' src={build2} alt="error Loading" data-aos="slide-left" data-aos-duration="1000" />
     </div>
   </div>
 </div>
@@ -185,13 +187,13 @@ AR Construction's experienced professionals embrace the challenges of diverse bu
         <span className='text-3xl md:text-4xl font-bold font-serif md:ml-36 ml-4 w-full md:w-1/2 text-center md:text-left'>
           Your Vision, Our Mission..
         </span>
-        <p className='md:ml-36 md:mr-40 ml-4 mr-4 mt-4 md:mt-0 text-lg md:text-base text-center md:text-left w-full md:w-1/2'>
+        <p className='md:ml-36 md:mr-40 ml-4 mr-4 mt-4 md:mt-0 text-lg md:text-base text-center md:text-left w-full md:w-1/2' data-aos="zoom-in-up">
           
 At AR Construction, we take ownership of every project, ensuring accountability and a deep commitment to your success. Our experienced and innovative team is dedicated to delivering solutions that drive excellence. Your success is our success.
         </p>
       </div>
 
-      <div className='flex justify-center items-center min-h-screen bg-white font-serif mt-12'>
+      <div className='flex justify-center items-center min-h-screen bg-white font-serif mt-12' data-aos="zoom-in-up">
         <div className='bg-gray-100 rounded-lg w-full md:w-4/5 flex flex-col md:flex-row items-center md:items-start shadow-lg p-6 md:p-12'>
           {/* Left Text Section */}
           <div className='md:w-2/3 w-full md:pl-8'>
