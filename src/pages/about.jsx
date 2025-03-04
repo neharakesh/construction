@@ -1,17 +1,24 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import cr4 from '../../public/images/build.jpeg'
 import About1 from '../../public/images/about1.jpg'
 import about2 from '../../public/images/about2.jpg'
+import img1 from '../../public/images/img1.jpg'
 import { Mail, Phone, MapPin,ChevronDown } from "lucide-react"
 import Model from '../../public/images/model.jpeg'
 import { FaTools } from 'react-icons/fa' 
 import { FaShieldAlt } from 'react-icons/fa'
 import { FaSmile } from 'react-icons/fa'
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 
 function About() {
+   useEffect(()=>{
+        AOS.init({duration:1000})
+       },[])
+
     return (
         <>
         <div>
@@ -23,7 +30,7 @@ function About() {
         {/** Left side - Image */}
         <div className="md:w-1/2 flex justify-center">
           <img
-            className="w-full max-w-md rounded-lg shadow-xl object-contain"
+            className="w-full max-w-md rounded-lg shadow-xl object-contain"  data-aos="zoom-in-up"
             src={About1}
             alt="About Us"
           />
@@ -31,8 +38,8 @@ function About() {
         
         {/** Right side - Content */}
         <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="text-5xl font-extrabold text-gray-900 mb-6">About Us</h1>
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <h1 className="text-5xl font-extrabold text-gray-900 mb-6"  data-aos="zoom-in-up">About Us</h1>
+          <p className="text-lg text-gray-700 leading-relaxed"  data-aos="zoom-in-up">
           At AR Construction, we deliver excellence in residential, commercial, institutional, and infrastructure projects. Founded by <em className='font-semibold'>Amit Rajpoot </em>, our commitment to quality, integrity, and innovation drives every project.
 
 We prioritize efficiency, safety, and client satisfaction, leveraging the latest technology and sustainable practices. More than builders, we are trusted partners, dedicated to delivering exceptional results and lasting relationships.
@@ -45,7 +52,7 @@ Let’s build the future together.
       {/** Stats and Achievements Section */}
       <div className="container mx-auto mt-40 flex flex-col md:flex-row items-center gap-12 md:gap-20">
         {/** Left side - Content */}
-        <div className="md:w-1/2 text-center md:text-center">
+        <div className="md:w-1/2 text-center md:text-center"  data-aos="zoom-in-up">
           <h1 className="text-5xl font-extrabold text-gray-900 mb-2">Impressive Stats and</h1>
           <h1 className="text-5xl font-extrabold text-gray-900 mb-6">Achievements You Can Trust</h1>
           <p className="text-lg text-gray-700 leading-relaxed">
@@ -56,14 +63,14 @@ Let’s build the future together.
         
         {/** Right side - Cards Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full md:w-1/2">
-          <div className="p-8 rounded-xl shadow-lg bg-white transition-transform transform hover:scale-105 hover:bg-blue-600 hover:text-white duration-300">
-            <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
+          <div className="p-8 rounded-xl shadow-lg bg-white transition-transform transform hover:scale-105 hover:bg-yellow-500 hover:text-white duration-300"  data-aos="zoom-in-up">
+            <h2 className="text-3xl font-bold mb-4" >Our Vision</h2>
             <p className="text-gray-700 hover:text-white">
             We strive to revolutionize the construction industry through innovation, precision, and customer-centric solutions, delivering excellence in every project we build.
             </p>
           </div>
           
-          <div className="p-8 rounded-xl shadow-lg bg-white transition-transform transform hover:scale-105 hover:bg-green-600 hover:text-white duration-300">
+          <div className="p-8 rounded-xl shadow-lg bg-white transition-transform transform hover:scale-105 hover:bg-yellow-500 hover:text-white duration-300"  data-aos="zoom-in-up">
             <h2 className="text-3xl font-bold mb-4">Our Commitment</h2>
             <p className="text-gray-700 hover:text-white">
             Delivering exceptional construction services with a customer-first approach, built on a foundation of quality, integrity, and reliability.
@@ -79,12 +86,12 @@ Let’s build the future together.
         </div>
         <div className="container mx-auto mt-20 flex flex-col items-center text-center md:text-left">
         <img 
-          className="w-full md:w-3/4 rounded-lg shadow-xl object-cover hover:scale-105 transition-transform duration-300" 
+          className="w-full md:w-3/4 rounded-lg shadow-xl object-cover  transition-transform duration-300"  data-aos="zoom-in-up"
           src={about2} 
           alt="Our Story" 
         />
         <p className="mt-8 text-lg text-white leading-relaxed w-full md:w-3/4 p-10  shadow-lg rounded-lg bg-yellow-600">
-          <span className="font-semibold text-gray-900">AR Construction </span>was founded with a vision by Amit Rajpoot, who left his job to establish a company dedicated to delivering quality construction services with a professional touch. Starting in his own small town, his goal was to make expert construction solutions accessible to those who couldn’t afford professional architects. With a strong commitment to excellence, Amit expanded his team to serve nearby towns, ensuring that more people could benefit from reliable and affordable construction services. At AR Construction, we’re not just building structures—we’re building trust and enhancing communities.
+          <span className="font-semibold text-gray-900"  data-aos="zoom-in-up">AR Construction </span>was founded with a vision by Amit Rajpoot, who left his job to establish a company dedicated to delivering quality construction services with a professional touch. Starting in his own small town, his goal was to make expert construction solutions accessible to those who couldn’t afford professional architects. With a strong commitment to excellence, Amit expanded his team to serve nearby towns, ensuring that more people could benefit from reliable and affordable construction services. At AR Construction, we’re not just building structures—we’re building trust and enhancing communities.
         </p>
       </div>
 
@@ -103,15 +110,15 @@ Let’s build the future together.
         The Best Choice for Your Construction Needs
         </h2>
 
-        <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex items-center gap-6">
+        <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex items-center gap-6"  data-aos="zoom-in-up">
           <FaTools className="text-blue-600 text-4xl" />
-          <div>
-            <h2 className="text-xl font-semibold text-gray-900">Experienced Professionals</h2>
+          <div >
+            <h2 className="text-xl font-semibold text-gray-900" >Experienced Professionals</h2>
             <p className="text-gray-700 text-sm">Our skilled team brings years of expertise to deliver exceptional results for every construction project.</p>
           </div>
         </div>
 
-        <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex items-center gap-6">
+        <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex items-center gap-6"  data-aos="zoom-in-up">
           <FaShieldAlt className="text-green-600 text-4xl" />
           <div>
             <h2 className="text-xl font-semibold text-gray-900">Reliable & Trustworthy</h2>
@@ -119,7 +126,7 @@ Let’s build the future together.
           </div>
         </div>
 
-        <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex items-center gap-6">
+        <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex items-center gap-6"  data-aos="zoom-in-up">
           <FaSmile className="text-yellow-600 text-4xl" />
           <div>
             <h2 className="text-xl font-semibold text-gray-900">Customer Satisfaction</h2>
@@ -131,7 +138,7 @@ Let’s build the future together.
       {/* Right Side */}
       <div className="md:w-1/2 flex flex-col  space-y-4 ">
       <p className='text-gray-700 text-sm md:mr-28'>At AR Construction, we understand that your home or business is a significant investment, and we’re committed to building it with precision and care. Here’s why we’re the best choice for all your construction needs:</p>
-        <img className="w-full max-w-sm md:max-w-lg rounded-xl shadow-xl object-cover md:mr-28 mt-8 justify-center items-center flex text-center" src={About1} alt="About Us" />
+        <img className="w-full max-w-sm md:max-w-lg rounded-xl shadow-xl object-cover md:mr-28 mt-8 justify-center items-center flex text-center"  data-aos="fade-right" src={img1} alt="About Us" />
       </div>
 
     </div>
@@ -148,7 +155,7 @@ Let’s build the future together.
   <div className="flex flex-col md:flex-row md:ml-24 mt-16 gap-10 items-center md:items-start">
     
     {/* Left Team Member */}
-    <div className="w-full md:w-1/2 flex flex-col md:flex-row items-center gap-6 p-6 border border-gray-200 shadow-lg rounded-lg">
+    <div className="w-full md:w-1/2 flex flex-col md:flex-row items-center gap-6 p-6 border border-gray-200 shadow-lg rounded-lg"  data-aos="zoom-in-up">
       {/* Profile Image */}
       <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-blue-500 shadow-md">
         <img src={Model} alt="Profile" className="w-full h-full object-cover" />
@@ -175,7 +182,7 @@ Let’s build the future together.
     </div>
 
     {/* Right Team Member (Duplicate for another member) */}
-    <div className="w-full md:w-1/2 flex flex-col md:flex-row items-center gap-6 p-6 border border-gray-200 shadow-lg rounded-lg">
+    <div className="w-full md:w-1/2 flex flex-col md:flex-row items-center gap-6 p-6 border border-gray-200 shadow-lg rounded-lg"  data-aos="zoom-in-up">
       {/* Profile Image */}
       <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-blue-500 shadow-md">
         <img src={Model} alt="Profile" className="w-full h-full object-cover" />

@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import cr1 from '../../public/images/cr11.jpeg'
 import cr2 from '../../public/images/cr3.png'
 import cr3 from '../../public/images/cr22.jpeg'
-import cr4 from '../../public/images/cr2.png'
+import cr4 from '../../public/images/cr003.jpg'
+import cr5 from '../../public/images/cr001.jpeg'
+
 
 const Carousel = () => {
-  const slides = [cr1,cr2,cr3,cr4
+  const slides = [cr5,cr4,cr3,cr1,cr2
     
   ];
 

@@ -15,10 +15,10 @@ const Footer = () => {
 
           {/* Navigation Links */}
           <div className="flex space-x-6 mb-6 md:mb-0">
-            <a href="#" className=" text-white hover:text-white">About Us</a>
-            <a href="#" className=" text-white hover:text-white">Services</a>
-            <a href="#" className=" text-white hover:text-white">Contact</a>
-            <a href="#" className=" text-white hover:text-white">Privacy Policy</a>
+            <a href="/about" className=" text-white hover:text-yellow-600">About Us</a>
+            <a href="/service" className=" text-white hover:text-yellow-600">Services</a>
+            <a href="/contact" className=" text-white hover:text-yellow-600">Contact</a>
+            <a href="#" className=" text-white hover:text-yellow-600">Privacy Policy</a>
           </div>
 
           {/* Social Media Links */}

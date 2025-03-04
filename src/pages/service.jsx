@@ -1,12 +1,17 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import About1 from '../../public/images/about1.jpg'
+import img2 from '../../public/images/img2.jpg'
 import cr2 from '../../public/images/cr2.png'
-
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 import { HardHat, Building, Truck, Wrench, Ruler, PaintRoller, Hammer, Layers } from "lucide-react";
 function Service() {
+  useEffect(()=>{
+        AOS.init({duration:1000})
+      },[])
     
 
 const services = [
@@ -38,10 +43,10 @@ const services = [
 
       {/* Left Side - Construction Services */}
       <div className="md:w-1/2 w-full space-y-3 text-center md:text-left md:ml-32">
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight" data-aos="zoom-in-up">
           Construction Services
         </h2>
-        <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+        <p className="text-gray-700 text-base md:text-lg leading-relaxed" data-aos="zoom-in-up">
           Our suite of integrated construction services ensures the highest degree of quality, 
           safety, efficiency, and innovation on your projects.
         </p>
@@ -50,9 +55,9 @@ const services = [
       {/* Right Side - Image */}
       <div className="md:w-1/2 w-full flex justify-center">
         <img 
-          src={About1} 
+          src={img2} 
           alt="Construction Services"
-          className="w-full max-w-md rounded-lg shadow-md object-cover"
+          className="w-full max-w-xl rounded-lg shadow-md object-cover" data-aos="fade-right"
         />
       </div>
 
@@ -69,7 +74,7 @@ const services = [
 
       {/* Left Side - Construction Services */}
       <div className="md:w-1/2 w-full space-y-3 text-center md:text-left md:ml-32">
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight" data-aos="zoom-in-up">
         Delivering integrated construction services to build lasting success
         </h2>
         
@@ -77,7 +82,7 @@ const services = [
 
       {/* Right Side - Image */}
       <div className="md:w-1/2 w-full flex justify-center">
-      <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+      <p className="text-gray-700 text-base md:text-lg leading-relaxed" data-aos="zoom-in-up">
       Delivering Comprehensive Construction Solutions for Lasting Excellence  
       Our range of construction services is designed to uphold the highest standards of quality, safety, efficiency, and innovation, ensuring exceptional results for every project.
         </p>
@@ -89,9 +94,9 @@ const services = [
 </div>
 
 {/**2nd part */}
-        <div className=''>
+        <div className='' data-aos="zoom-in-up">
             <img src={cr2} className='w-full mt-32' alt="" />
-            <h1 className='mt-32 font-semibold md:text-5xl md:ml-40 md:mr-72 font-serif'>No matter the challenge, we build on what we know works and elevate your vision of success</h1>
+            <h1 className='mt-32 font-semibold md:text-5xl md:ml-40 md:mr-72 font-serif' data-aos="zoom-in-up">No matter the challenge, we build on what we know works and elevate your vision of success</h1>
         </div>
 
         {/**our services part */}
@@ -105,7 +110,7 @@ const services = [
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 " data-aos="zoom-in-up">
           {services.map((service, index) => (
             <div 
               key={index} 

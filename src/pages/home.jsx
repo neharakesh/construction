@@ -3,8 +3,8 @@ import Navbar from '../components/navbar.jsx'
 import Carousel from '../components/carousel.jsx'
 import HeatMap from '../components/heatmap.jsx'
 import { Link } from 'react-router-dom'
-import build from '../../public/images/build.jpeg'
-import build2 from '../../public/images/build2.jpeg'
+import build from '../../public/images/home2.jpg'
+import build2 from '../../public/images/home1.jpg'
 import mapfull from '../../public/images/mapfull.jpeg'
 import amitpic from '../../public/images/amitpic.jpeg'
 import saftey from '../../public/images/saftey.jpg'
@@ -43,7 +43,9 @@ function Home() {
         <>
         <div className=''>
         <Navbar/>
+        <div data-aos="zoom-in-up">
         <Carousel/>
+        </div>
         {/**who we are section */}
         <div>
             <h1 className='font-semibold font-serif text-2xl md:ml-36 mt-20 mb-8 text-gray-600 ml-4'>____Who we are?...</h1>
@@ -134,10 +136,10 @@ function Home() {
     </div>
     {/** Right Section */}
     <div className='justify-center w-full md:w-1/2 mt-8 md:mt-32'>
-      <h1 className='text-4xl md:text-5xl font-bold mt-8  text-center text-yellow-600 '>
+      <h1 className='text-4xl md:text-5xl font-bold mt-8  text-center text-yellow-600 ' data-aos="zoom-in-up">
       We build your Dream Home
       </h1>
-      <p className='mt-6 md:mr-12 text-center md:text-center'>
+      <p className='mt-6 md:mr-12 text-center md:text-center' data-aos="zoom-in-up">
       AR Construction's team of skilled professionals is dedicated to delivering excellence across a diverse range of projects, including educational, institutional, residential, and commercial developments. We bring expertise, competitive pricing, financial stability, and a strong commitment to quality, integrity, and workplace safety, ensuring the success of every project we undertake.
       </p>
     </div>
