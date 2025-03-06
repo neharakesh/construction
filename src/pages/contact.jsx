@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import About1 from "../../public/images/about1.jpg";
+
 import { Mail, Phone, MapPin, ChevronDown } from "lucide-react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import con1 from "../../public/images/con1revise.jpg"
-import con2 from "../../public/images/con2.jpg"
+import con1 from "/images/con1revise.jpg"
+import con2 from "/images/con2.jpg"
 import AOS from "aos";
 import "aos/dist/aos.css";
 

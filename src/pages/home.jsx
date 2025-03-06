@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import Navbar from '../components/navbar.jsx'
 import Carousel from '../components/carousel.jsx'
-import HeatMap from '../components/heatmap.jsx'
+
 import { Link } from 'react-router-dom'
-import build from '../../public/images/home2.jpg'
-import build2 from '../../public/images/home1.jpg'
-import mapfull from '../../public/images/mapfull.jpeg'
-import amitpic from '../../public/images/amitpic.jpeg'
-import saftey from '../../public/images/saftey.jpg'
+import build from '/images/home2.jpg'
+import build2 from '/images/home1.jpg'
+import mapfull from '/images/mapfull.jpeg'
+import amitpic from '/images/amitpic.jpeg'
+import saftey from '/images/saftey.jpg'
 import { Star } from "lucide-react";
 import Footer from '../components/footer.jsx'
 import AOS from "aos"

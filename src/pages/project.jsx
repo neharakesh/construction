@@ -1,11 +1,11 @@
 import React,{useEffect} from 'react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
-import img1 from '../../public/images/about1.jpg'
-import pro1 from '../../public/images/pro1.jpg'
-import pro2 from '../../public/images/pro2.jpg'
-import pro3 from '../../public/images/pro3.jpg'
-import pro4 from '../../public/images/pro4.jpg'
+
+import pro1 from '/images/pro1.jpg'
+import pro2 from '/images/pro2.jpg'
+import pro3 from '/images/pro3.jpg'
+import pro4 from '/images/pro4.jpg'
 
 import AOS from "aos"
 import "aos/dist/aos.css"

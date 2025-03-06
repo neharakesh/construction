@@ -1,9 +1,9 @@
 import React,{useEffect} from 'react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
-import About1 from '../../public/images/about1.jpg'
-import img2 from '../../public/images/img2.jpg'
-import cr2 from '../../public/images/cr2.png'
+
+import img2 from '/images/img2.jpg'
+import cr2 from '/images/cr2.png'
 import AOS from "aos"
 import "aos/dist/aos.css"
 

@@ -1,12 +1,12 @@
 import React,{useEffect} from 'react'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
-import cr4 from '../../public/images/build.jpeg'
-import About1 from '../../public/images/about1.jpg'
-import about2 from '../../public/images/about2.jpg'
-import img1 from '../../public/images/img1.jpg'
+
+import about2 from '/images/about2.jpg'
+import About1 from '/images/about1.jpg'
+import img1 from '/images/img1.jpg'
 import { Mail, Phone, MapPin,ChevronDown } from "lucide-react"
-import Model from '../../public/images/model.jpeg'
+import Model from '/images/model.jpeg'
 import { FaTools } from 'react-icons/fa' 
 import { FaShieldAlt } from 'react-icons/fa'
 import { FaSmile } from 'react-icons/fa'

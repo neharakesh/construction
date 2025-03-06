@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/navbar.jsx';
 import Footer from '../components/footer.jsx';
 import HeatMap from '../components/heatmap.jsx';
-import Office from '../../public/images/office.jpeg';
+import Office from '/images/office.jpeg';
 
 const OfficePage = () => {
   return (
