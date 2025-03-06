@@ -28,7 +28,9 @@ const Carousel = () => {
     setCurrentIndex((currentIndex - 1 + slides.length) % slides.length);
 
   return (
-    <div className="carousel w-full mt-5 mx-auto rounded-lg shadow-lg overflow-hidden relative">
+    
+      <div className="carousel w-full mt-5 mx-auto rounded-lg shadow-lg overflow-hidden relative z-10">
+
       {/* Slides */}
       {slides.map((slide, index) => (
         <div

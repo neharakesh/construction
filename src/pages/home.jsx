@@ -41,9 +41,10 @@ function Home() {
       ];
     return (
         <>
-        <div className=''>
+        <div className='overflow-hidden'>
         <Navbar/>
-        <div data-aos="zoom-in-up">
+
+        <div data-aos="zoom-in-up ">
         <Carousel/>
         </div>
         {/**who we are section */}
@@ -278,8 +279,8 @@ AR Construction thrives under the leadership of its founder, Amit Rajpoot, whose
         
         <div className=''><Footer/></div>
         
-
         </div>
+        
         
         </>
     )
