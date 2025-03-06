@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import cr1 from '../../public/images/cr11.jpeg'
-import cr2 from '../../public/images/cr3.png'
-import cr3 from '../../public/images/cr22.jpeg'
-import cr4 from '../../public/images/cr003.jpg'
-import cr5 from '../../public/images/cr001.jpeg'
+import cr1 from '/images/cr11.jpeg'
+import cr2 from '/images/cr3.png'
+import cr3 from '/images/cr22.jpeg'
+import cr4 from '/images/cr003.jpg'
+import cr5 from '/images/cr001.jpeg'
 
 
 const Carousel = () => {
